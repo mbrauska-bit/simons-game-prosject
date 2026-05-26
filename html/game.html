@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simons game</title>
+        <link rel="stylesheet" href="../css/game.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="../index.html">Home</a>
+        </div>
+        <h1>Simons game</h1>
+        <p>Let's test your memory and focus!</p>
+        <p id="message">Watch the pattern, then repeat it!</p>
+        <p id="score">Score: 0</p>
+
+        <section class="game-controls">
+            <button id="gameStart">Start game</button>
+            <button id="restart">Restart game</button>
+            <button onclick="window.print()">Print this page</button>
+        </section>
+
+        <section class="game-board">
+            <div id="red" class="tile inactive-border" onclick="panelClicked(event.currentTarget)"></div>
+            <div id="blue" class="tile inactive-border" onclick="panelClicked(event.currentTarget)"></div>
+            <div id="green" class="tile inactive-border" onclick="panelClicked(event.currentTarget)"></div>
+            <div id="yellow" class="tile inactive-border" onclick="panelClicked(event.currentTarget)"></div>
+        </section>
+       
+        <footer class="footer">
+            <p>Copyright 2026</p>
+        </footer>
+
+        <script src="../js/main.js"></script>
+    </body>
+</html>
